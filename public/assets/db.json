@@ -40,7 +40,7 @@
       "name": "Samsung Galaxy S23 Ultra 1TB",
       "image": "/assets/products/product-9.png",
       "rating": 5,
-      "price": 11.150
+      "price": 11.159
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "name": "Xbox Series X",
       "image": "/assets/products/product-12.png",
       "rating": 5,
-      "price": 4.550
+      "price": 4.559
     },
     {
       "id": 10,
@@ -82,7 +82,7 @@
       "name": "Gaming Desktop RTX 3090Ti",
       "image": "/assets/products/product-15.png",
       "rating": 5,
-      "price": 8.050
+      "price": 8.059
     }
   ]
 }
