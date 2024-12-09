@@ -32,11 +32,11 @@ export const SidebarProducts = ({ id, price, name, image, quantity = 1 }: Sideba
         </button>
         <div className="details">
           <h3>{name}</h3>
-          <p>R$ {price.toFixed(2)}</p>
+          <p>R$ {price}</p>
           <input type="number" min={1} value={amount} onChange={handleAmountChange} />
           {priceSum && price && (
             <p className="sumPrice">
-              <span>Soma: </span> R$ {priceSum.toFixed(2)}
+              <span>Soma: </span> R$ {priceSum}
             </p>
           )}
         </div>

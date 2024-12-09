@@ -47,14 +47,14 @@
       "name": "Asus Rog Phone 3 Gamer",
       "image": "/assets/products/product-10.png",
       "rating": 4,
-      "price": 65.000
+      "price": 10.000
     },
     {
       "id": 8,
-      "name": "Xiaomi 13 Ultra",
+      "name": "Xiaomi 12s Ultra",
       "image": "/assets/products/product-11.png",
       "rating": 4,
-      "price": 80.500
+      "price": 9.500
     },
     {
       "id": 9,
@@ -75,14 +75,14 @@
       "name": "PlayStation 5 - 1tb",
       "image": "/assets/products/product-14.png",
       "rating": 5,
-      "price": 54.000
+      "price": 5.000
     },
     {
       "id": 12,
       "name": "Gaming Desktop RTX 3090Ti",
       "image": "/assets/products/product-15.png",
       "rating": 5,
-      "price": 45.000
+      "price": 8.000
     }
   ]
 }

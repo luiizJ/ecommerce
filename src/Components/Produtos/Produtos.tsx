@@ -52,7 +52,7 @@ export const Produtos = () => {
               </p>
               
               {/* Preço do produto */}
-              <p className="produto-preco"> <span> R$ - </span>{product.price.toFixed(2)}</p>
+              <p className="produto-preco"> <span> R$ - </span>{product.price}</p>
 
                 <div className="buttons">
                   <Link href="/products/123/checkout" className="btnIcon">
