@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Combo Gamer - kit completo",
+      "image": "/assets/products/product-4.png",
+      "rating": 5,
+      "price": 120.00
+    },
+    {
+      "id": 2,
+      "name": "Msi GeFore Gtx 1650",
+      "image": "/assets/products/product-5.png",
+      "rating": 5,
+      "price": 899.99
+    },
+    {
+      "id": 3,
+      "name": "PlayStation DualSense Controle",
+      "image": "/assets/products/product-6.png",
+      "rating": 5,
+      "price": 509.99
+    },
+    {
+      "id": 4,
+      "name": "Cadeira Xtreme Gamers Cinesis",
+      "image": "/assets/products/product-7.png",
+      "rating": 3,
+      "price": 705.00
+    },
+    {
+      "id": 5,
+      "name": "iPhone 14 Pro Max 512GB",
+      "image": "/assets/products/product-8.png",
+      "rating": 5,
+      "price": 4.789
+    },
+    {
+      "id": 6,
+      "name": "Samsung Galaxy S23 Ultra 1TB",
+      "image": "/assets/products/product-9.png",
+      "rating": 5,
+      "price": 11.0000
+    },
+    {
+      "id": 7,
+      "name": "Asus Rog Phone 3 Gamer",
+      "image": "/assets/products/product-10.png",
+      "rating": 4,
+      "price": 65.000
+    },
+    {
+      "id": 8,
+      "name": "Xiaomi 13 Ultra",
+      "image": "/assets/products/product-11.png",
+      "rating": 4,
+      "price": 80.500
+    },
+    {
+      "id": 9,
+      "name": "Xbox Series X",
+      "image": "/assets/products/product-12.png",
+      "rating": 5,
+      "price": 4.5000
+    },
+    {
+      "id": 10,
+      "name": "Racingwheel GT480 Ferrari",
+      "image": "/assets/products/product-13.png",
+      "rating": 5,
+      "price": 14.000
+    },
+    {
+      "id": 11,
+      "name": "PlayStation 5 - 1tb",
+      "image": "/assets/products/product-14.png",
+      "rating": 5,
+      "price": 54.000
+    },
+    {
+      "id": 12,
+      "name": "Gaming Desktop RTX 3090Ti",
+      "image": "/assets/products/product-15.png",
+      "rating": 5,
+      "price": 45.000
+    }
+  ]
+}
