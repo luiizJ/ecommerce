@@ -36,7 +36,7 @@ export const SidebarProducts = ({ id, price, name, image, quantity = 1 }: Sideba
           <input type="number" min={1} value={amount} onChange={handleAmountChange} />
           {priceSum && price && (
             <p className="sumPrice">
-              <span>Soma: </span> R$ {priceSum.toFixed(2)}
+              <span>Soma: </span> R$ {priceSum.toFixed(3)}
             </p>
           )}
         </div>

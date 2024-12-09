@@ -42,7 +42,7 @@ export const Sidebar = () => {
       </div>
 
       <div className="containerProducts">
-        <p>Total: <span>R$ {total.toFixed(2)}</span></p>
+        <p>Total: <span>R$ {total.toFixed(3)}</span></p>
       </div>
 
       {cartItems.length > 0 && (
