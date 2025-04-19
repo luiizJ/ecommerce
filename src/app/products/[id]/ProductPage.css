@@ -83,6 +83,7 @@
 /* Preço e avaliação */
 .price-section {
   display: flex;
+  margin-top: 2px;
   align-items: baseline;
   flex-direction: column;
 }
@@ -242,8 +243,8 @@
   line-height: 1.2;
 }
 .related-info p {
-  margin: 4px 0 0;
-  font-weight: 600;
+  margin: 5px 0 0;
+  font-weight: bold;
   color: #008000;
 }
 

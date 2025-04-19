@@ -117,13 +117,14 @@ const ProductPage: React.FC = () => {
                 <h3>{rel.name}</h3>
                 <p>R$ {rel.price.toFixed(2).replace('.', ',')}</p>
                 <div className="price-section">
-            <span className="discount">
-              À vista no Pix com <span style={{ fontWeight: 'bold' }}>10% de Desconto</span></span>
-              <span className="installments"> Ou em até 10x de <span  style={{ fontWeight: 'bold' }}> R$ {calcJuros ({ price: rel.price })} </span> sem juros no cartão
-              </span>
-        </div>
+                  <span className="discount">
+                   À vista no Pix com <span style={{ fontWeight: 'bold' }}>10% de Desconto</span></span>
+                  <span className="installments"> Ou em até 10x de <span  style={{ fontWeight: 'bold' }}> R$ {calcJuros ({ price: rel.price })} </span> sem juros no cartão
+                  </span>
+                </div>
+                
               </div>
-            </Link>
+              </Link>
           ))}
         </div>
       </section>
