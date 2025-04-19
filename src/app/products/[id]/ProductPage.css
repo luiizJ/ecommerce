@@ -1,0 +1,268 @@
+/* ProductPage.css */
+
+/* Container geral */
+.product-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 3px;
+}
+.breadcrumb a {
+  color: #444;
+  text-decoration: none;
+  margin-right: 4px;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+.breadcrumb span {
+  font-weight: 500;
+  color: #222;
+}
+
+/* Área principal: galeria + detalhes */
+.product-main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media (min-width: 768px) {
+  .product-main {
+    flex-direction: row;
+  }
+}
+
+/* Galeria de imagens */
+.gallery {
+  flex: 1;
+}
+.main-image {
+  margin-bottom: 12px;
+}
+.thumbnails {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+}
+.thumb-item {
+  flex-shrink: 0;
+  border: 1px solid #ddd;
+  padding: 4px;
+  cursor: pointer;
+}
+.thumb-item:hover {
+  border-color: #aaa;
+}
+
+/* Detalhes do produto */
+.product-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.product-title {
+  font-size: 24px;
+  margin: 0;
+  color: #222;
+}
+.product-brand img {
+  display: block;
+  margin-top: 8px;
+}
+
+/* Preço e avaliação */
+.price-section {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+}
+.price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #008000;
+}
+.rating {
+  font-size: 16px;
+  color: #ff9900;
+}
+
+/* Botões de ação */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 250px;
+}
+.btn-add-cart,
+.btn-buy {
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+.btn-add-cart {
+  background-color: #ff6600;
+  color: #fff;
+}
+.btn-add-cart:hover {
+  background-color: #e65500;
+}
+.btn-buy {
+  background-color: #ddd;
+  color: #333;
+}
+.btn-buy:hover {
+  background-color: #ccc;
+}
+
+/* Seção de CEP */
+.cep-section {
+  margin-top: 16px;
+}
+.cep-section label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+.cep-input-group {
+  display: flex;
+  max-width: 240px;
+}
+.cep-input-group input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+.cep-input-group input:focus {
+  outline: none;
+  border-color: #888;
+}
+.btn-cep {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: #ff6600;
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.btn-cep:hover {
+  background-color: #e65500;
+}
+.cep-note {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Accordion de descrição */
+.accordion {
+  margin-top: 32px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.accordion summary {
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  list-style: none;
+}
+.accordion p {
+  padding: 0 16px 16px;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Produtos relacionados */
+.related-products {
+  margin-top: 48px;
+}
+.related-products h2 {
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: #222;
+}
+.related-carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+.related-card {
+  flex: 0 0 auto;
+  width: 350px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.related-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.related-card img {
+  display: block;
+  width: auto;
+  border-bottom: 1px solid #ddd;
+}
+.related-info {
+  padding: 8px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.related-info h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.related-info p {
+  margin: 4px 0 0;
+  font-weight: 600;
+  color: #008000;
+}
+
+/* Mensagem de produto não encontrado */
+.product-not-found {
+  padding: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+}
+
+.discount{
+  font-size: 15px;
+  color: #272727;
+  line-height: 1.5;
+  margin-top: 2px;
+}
+.installments{
+  font-size: 15px;
+  color: #272727;
+  line-height: 1.5;
+}
