@@ -1,6 +1,6 @@
 .newsletter-banner {
   width: 100%;
-  background: linear-gradient(134deg, #430a6b, #000000);
+  background: linear-gradient(134deg, #0a0e10, #10141c);
   color: #fff;
   padding: 40px 20px;
 }
@@ -71,8 +71,6 @@
 }
 
 @media (max-width: 768px) {
-  .newsletter-content {
-  }
   .newsletter-form {
     width: 100%;
     justify-content: center;
