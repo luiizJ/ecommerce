@@ -1,63 +1,92 @@
-footer{
-  background-color: #fff;
-  color: #000000;
-  border-top: #000000 solid 3px;
-}
-footer .content{
-  display: flex;
-  padding: 1rem;
-  gap: 2rem;
-  justify-content: center;
-}
-.logo-footer{
-  text-align: center;
-}
-.logo-footer .logo {
-  margin-bottom: 0.7rem;
-}
+/* Footer.css */
 
-.logo-footer .logo p{
-  max-width: 480px;
-  margin-top: 1rem;
-  padding-top: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer .links ul li:hover{
-transform: translateY(-4px);
-transition: all 0.2s;
-font-weight: bolder;
-color: #234af5;
-}
-
-footer .links h3{
-  margin-bottom: 0.7rem;
-}
-
-footer .links ul{
-  list-style: none;
+.footer {
+  background-color: #10141c;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(134deg, #430a6b, #000) 1;
+  color: #f1f1f1;
+  font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  align-items: center;
+  justify-content: center;
 }
 
-@media (max-width: 880px){
-  footer .content{
-    display: inline;
-    font-size: 1rem;
-  }
+.footer-newsletter {
+  margin-bottom: 40px;
+  width: 100%;
+}
 
-  footer .content > div{
-    padding: 1rem;
-  }
-  hr{
-    display: none;
-  }
-  footer .links h3{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5rem;
+  margin-bottom: 40px;
+  padding-left: 17%;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 180px;
+  font-size: 18px;
+}
+
+.column-title {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.column-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column-list li {
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.social-icons a {
+  color: #f1f1f1;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff6600;
+}
+
+.social-credit {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.6;
+}
+/* Em Footer.css */
+
+.department-grid {
+  display: flex;
+  gap: 40px;
+}
+
+.department-grid ul {
+  list-style: none;
+  padding: 0;
+}
+
+.department-grid li {
+  margin-bottom: 8px;
+  font-size: 15px;
 }

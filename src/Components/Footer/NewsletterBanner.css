@@ -1,0 +1,81 @@
+.newsletter-banner {
+  width: 100%;
+  background: linear-gradient(134deg, #430a6b, #000000);
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.newsletter-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.newsletter-text {
+  flex: 1 1 300px;
+}
+
+.newsletter-text h2 {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0 0 8px;
+}
+
+.mail-icon {
+  margin-right: 8px;
+  font-size: 1.8rem;
+}
+
+.newsletter-text p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.newsletter-form {
+  display: flex;
+  flex: 1 1 400px;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.newsletter-form input::placeholder {
+  color: #666;
+}
+
+.newsletter-form button {
+  padding: 12px 24px;
+  background-color: #ff6600;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.newsletter-form button:hover {
+  background-color: #e65500;
+}
+
+@media (max-width: 768px) {
+  .newsletter-content {
+  }
+  .newsletter-form {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

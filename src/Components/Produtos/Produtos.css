@@ -1,18 +1,18 @@
-.container-produtos{
+.container-produtos {
   max-width: 1250px;
-  margin-inline:auto;
-  padding-inline:auto;
+  margin-inline: auto;
+  padding-inline: auto;
 }
 
-.listaDeProdutos{
+.listaDeProdutos {
   display: grid;
-  grid-template-columns: repeat(auto-fit,280px);
+  grid-template-columns: repeat(auto-fit, 280px);
   place-content: center;
   gap: 1.7rem;
   padding-bottom: 2rem;
 }
 
-.produto-card{
+.produto-card {
   padding: 1rem;
   border: 1px solid #e0e0e0e0;
   border-radius: 8px;
@@ -20,72 +20,75 @@
   flex-direction: column;
 }
 
-.produto-card .produto-nome{
+.produto-card .produto-nome {
   font-weight: bolder;
   margin-top: 0.4rem;
+  font-size: 18px;
 }
 
-.produto-card .produto-preco{
+.produto-card .produto-preco {
   margin-top: 0.4rem;
+  font-size: 21px;
+  font-weight: bold;
 }
 
-.produto-card .produto-preco span{
+.produto-card .produto-preco span {
   font-weight: bolder;
 }
 
-.produto-card .produto-rating{
+.produto-card .produto-rating {
   font-size: 1rem;
   margin: 0.5rem;
 }
 
-.buttons{
+.buttons {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
   margin-top: 1rem;
 }
 
-.btnIcon{
+.btnIcon {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.3rem;
   padding: 0.8rem;
   background-color: #ff6600;
-  color:  #f0f0f0;
+  color: #f0f0f0;
   border-radius: 8px;
   font-size: 1rem;
   transition: all 0.2s;
   font-weight: 500;
 }
 
-.btnIcon:hover{
+.btnIcon:hover {
   transform: translateY(-4px);
   transition: all 0.2s;
   font-weight: bolder;
 }
 
-.btnAdd{
-  background-color:#234af5;
+.btnAdd {
+  background-color: #234af5;
 }
 
-.btnAdd:hover{
+.btnAdd:hover {
   transform: translateY(-3px);
   transition: all 0.2s;
   font-weight: bolder;
 }
 
-.title-section{
+.title-section {
   padding-bottom: 3rem;
   margin-top: 3rem;
 }
 
-.title-section h3{
+.title-section h3 {
   text-align: center;
   font-size: 2rem;
 }
 
-.border{
+.border {
   width: 160px;
   height: 2px;
   border-bottom: solid 4px #000;
@@ -93,13 +96,12 @@
 }
 
 @media (max-width: 880px) {
-  .title-section h3{
+  .title-section h3 {
     font-size: 1.2rem;
   }
   .produto-card .produto-nome,
   .produto-card .produto-rating,
-  .produto-card .produto-preco
-  {
+  .produto-card .produto-preco {
     max-height: 1rem;
     overflow: hidden;
     font-size: 0.8rem;

@@ -9,7 +9,7 @@
     },
     {
       "id": 2,
-      "name": "Msi GeFore Gtx 1650",
+      "name": " Placa de Vídeo MSI GeForce GTX 1650",
       "image": "/assets/products/product-5.png",
       "rating": 5,
       "price": 899.99
@@ -30,59 +30,59 @@
     },
     {
       "id": 5,
-      "name": "iPhone 14 Pro Max 512GB",
+      "name": "Apple iPhone 14 Pro Max (1 TB) – Roxo-profundo",
       "image": "/assets/products/product-8.png",
       "rating": 5,
-      "price": 4.88899
+      "price": 488899
     },
     {
       "id": 6,
       "name": "Samsung Galaxy S23 Ultra 1TB",
       "image": "/assets/products/product-9.png",
       "rating": 5,
-      "price": 11.159
+      "price": 11159
     },
     {
       "id": 7,
-      "name": "Asus Rog Phone 3 Gamer",
+      "name": "Smartphone Asus Rog Phone 8 Pro 512gb 5g",
       "image": "/assets/products/product-10.png",
       "rating": 4,
-      "price": 10.999
+      "price": 10999
     },
     {
       "id": 8,
-      "name": "Xiaomi 12s Ultra",
+      "name": "Xiaomi 12s Ultra 5g Preto 256 Gb + 12 Gb Ram",
       "image": "/assets/products/product-11.png",
       "rating": 4,
-      "price": 9.599
+      "price": 9599
     },
     {
       "id": 9,
       "name": "Xbox Series X",
       "image": "/assets/products/product-12.png",
       "rating": 5,
-      "price": 4.559
+      "price": 4559
     },
     {
       "id": 10,
       "name": "Racingwheel GT480 Ferrari",
       "image": "/assets/products/product-13.png",
       "rating": 5,
-      "price": 14.999
+      "price": 14999
     },
     {
       "id": 11,
       "name": "PlayStation 5 - 1tb",
       "image": "/assets/products/product-14.png",
       "rating": 5,
-      "price": 5.099
+      "price": 5099
     },
     {
       "id": 12,
       "name": "Gaming Desktop RTX 3090Ti",
       "image": "/assets/products/product-15.png",
       "rating": 5,
-      "price": 8.059
+      "price": 8059
     }
   ]
 }

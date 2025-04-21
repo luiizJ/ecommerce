@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import "../Produtos/Produtos.css";
 import { useCart } from "@/Context/CartContext";
 import type { Product } from "@/Types/ProductsTypes";
+import { formatPrice } from "@/Utils/calcJuros";
 
 export const Produtos = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -38,7 +39,10 @@ export const Produtos = () => {
           {/* Renderizando os produtos */}
           {products.map((product) => (
             <div key={product.id} className="produto-card">
-              <Link href={`/products/${product.id}`} className="produto-card-link">
+              <Link
+                href={`/products/${product.id}`}
+                className="produto-card-link"
+              >
                 {/* Imagem do produto */}
                 <Image
                   width={250}
@@ -59,7 +63,8 @@ export const Produtos = () => {
 
               {/* Preço do produto */}
               <p className="produto-preco">
-                <span>R$ - </span>{product.price}
+                <span style={{ color: "#ff6600" }}>R$ </span>
+                {formatPrice(product.price)}
               </p>
 
               {/* Botões */}

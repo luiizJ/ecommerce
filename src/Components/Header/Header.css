@@ -1,9 +1,9 @@
-header{
+header {
   background: linear-gradient(135deg, #000000, #550b8a);
   border-top: #000000 solid 4px;
 }
 
-header .container{
+header .container {
   max-width: 1600px;
   margin-inline: auto;
   display: grid;
@@ -13,20 +13,20 @@ header .container{
   gap: 4rem;
 }
 
-header .left-slide{
+header .left-slide {
   color: #fff;
 }
 
-header .left-slide h2{
+header .left-slide h2 {
   font-size: 2.5rem;
 }
 
-header .left-slide p{
+header .left-slide p {
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
 
-.verMais{
+.verMais {
   padding: 0.8rem 1rem;
   background-color: #234af5;
   border-radius: 8px;
@@ -37,28 +37,28 @@ header .left-slide p{
   align-items: center;
 }
 
-.verMais:hover{
+.verMais:hover {
   background-color: #fff;
   max-width: 200px;
   color: black;
 }
 
-header .right-slide img{
+header .right-slide img {
   width: 100%;
 }
-@media (max-width: 780px){
-  header .container{
+@media (max-width: 780px) {
+  header .container {
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width:920px) {
-  header .container{
+@media (max-width: 920px) {
+  header .container {
     gap: 2rem;
     padding: 1.5rem;
     padding-top: 3rem;
   }
-  header .left-slide h2{
+  header .left-slide h2 {
     font-size: 1.8rem;
   }
 }

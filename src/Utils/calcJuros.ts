@@ -11,8 +11,16 @@ export const calcJuros = ({
   price,
   installments = 10,
   interestRate = 0.3,
-}: CalcJurosParams): string => {
+}: CalcJurosParams): number => {
   const total = price * (1 + interestRate);
   const installment = total / installments;
-  return installment.toFixed(2).replace('.', ',');
+  return parseFloat(installment.toFixed(2));
+};
+
+export const formatPrice = (price: number): string => {
+  return new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+    minimumFractionDigits: 2,
+  }).format(price);
 };

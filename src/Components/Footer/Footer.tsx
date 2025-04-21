@@ -1,27 +1,107 @@
-import Link from "next/link"
-import "../Footer/Footer.css"
+// components/Footer.tsx
+import React from "react";
+import "./Footer.css";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+  FaTiktok,
+} from "react-icons/fa";
+import NewsletterBanner from "./NewsletterBanner";
 
-export const Footer = () =>{
-   return(
-    <footer>
-        <div className="page-content content">
-          <div className="logo-footer">
-            <h1 className="logo">
-            Decayl<span>Store</span>
-            </h1>
-              <p>texto totalmente emocionante e inspirador para revolucionar a sua mente</p>
+const departments = [
+  "Hardware",
+  "Celular e Smartphone",
+  "Periféricos",
+  "Teclado e Mouse",
+  "Computadores",
+  "Placa de Vídeo",
+  "Monitores",
+  "Consoles e Games",
+  "Áudio",
+  "TV",
+  "Eletrodomésticos",
+  "Eletroportáteis",
+  "Smart Home",
+  "Ferramentas",
+  "Ar e Ventilação",
+  "Segurança",
+];
+
+export const Footer: React.FC = () => {
+  const half = Math.ceil(departments.length / 2);
+  const firstHalf = departments.slice(0, half);
+  const secondHalf = departments.slice(half);
+
+  const createSlug = (name: string) =>
+    encodeURIComponent(name.toLowerCase().replace(/\s+/g, "-"));
+
+  return (
+    <footer className="footer">
+      <div className="footer-newsletter">
+        <NewsletterBanner />
+      </div>
+
+      <div className="footer-columns">
+        <div className="footer-column departments">
+          <h3 className="column-title">Departamentos</h3>
+          <div className="department-grid">
+            <ul>
+              {firstHalf.map((item) => (
+                <li key={item}>
+                  <a href={`/departamentos/${createSlug(item)}`}>{item}</a>
+                </li>
+              ))}
+            </ul>
+            <ul>
+              {secondHalf.map((item) => (
+                <li key={item}>
+                  <a href={`/departamentos/${createSlug(item)}`}>{item}</a>
+                </li>
+              ))}
+            </ul>
           </div>
-          <hr/>
-           <div className="links">
-            <h3>Links Uteis</h3>
-              <ul>
-                <li><Link href={"/"}>GitHub</Link></li>
-                <li><Link href={"/"}>Linkedin</Link></li>
-              </ul>
-           </div>
         </div>
-    </footer>
-   )
-} 
 
-export default Footer
+        <div className="footer-column">
+          <h3 className="column-title">Atendimento</h3>
+          <p>Seg-Sex: 08h às 20h</p>
+          <p>Sáb: 09h às 15h</p>
+          <p>contato@decaystore.com.br</p>
+        </div>
+
+        <div className="footer-column">
+          <h3 className="column-title">Redes Sociais</h3>
+          <div className="social-icons">
+            <a href="#">
+              <FaFacebookF />
+            </a>
+            <a href="#">
+              <FaInstagram />
+            </a>
+            <a href="#">
+              <FaTwitter />
+            </a>
+            <a href="#">
+              <FaYoutube />
+            </a>
+            <a href="#">
+              <FaTiktok />
+            </a>
+          </div>
+          <p className="social-credit">Desenvolvido por Luiz Everson</p>
+        </div>
+      </div>
+
+      <div className="footer-copy">
+        <p>
+          © {new Date().getFullYear()} DecayStore. Todos os direitos
+          reservados.
+        </p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
