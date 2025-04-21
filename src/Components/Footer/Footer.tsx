@@ -1,13 +1,7 @@
 // components/Footer.tsx
 import React from "react";
 import "./Footer.css";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-  FaYoutube,
-  FaTiktok,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import NewsletterBanner from "./NewsletterBanner";
 
 const departments = [
@@ -74,20 +68,37 @@ export const Footer: React.FC = () => {
         <div className="footer-column">
           <h3 className="column-title">Redes Sociais</h3>
           <div className="social-icons">
-            <a href="#">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
               <FaFacebookF />
             </a>
-            <a href="#">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
               <FaInstagram />
             </a>
-            <a href="#">
-              <FaTwitter />
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin />
             </a>
-            <a href="#">
-              <FaYoutube />
-            </a>
-            <a href="#">
-              <FaTiktok />
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Github"
+            >
+              <FaGithub />
             </a>
           </div>
           <p className="social-credit">Desenvolvido por Luiz Everson</p>

@@ -1,6 +1,7 @@
 header {
-  background: linear-gradient(135deg, #000000, #550b8a);
-  border-top: #000000 solid 4px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 header .container {
