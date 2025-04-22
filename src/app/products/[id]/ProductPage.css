@@ -59,8 +59,23 @@
   padding: 4px;
   cursor: pointer;
 }
+
+.main-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain; /* garante proporção correta */
+}
 .thumb-item:hover {
   border-color: #aaa;
+}
+@media (min-width: 768px) {
+  .main-image {
+    max-width: 500px; /* tamanho máximo no tablet/desktop */
+    margin: 0;
+  }
+  .main-image img {
+    height: auto;
+  }
 }
 
 /* Detalhes do produto */
@@ -204,31 +219,27 @@
   color: #222;
 }
 .related-carousel {
-  display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  padding-bottom: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
 }
 .related-card {
-  flex: 0 0 auto;
-  width: 350px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  text-decoration: none;
-  color: inherit;
-  transition: box-shadow 0.2s;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: #fff;
+  height: 100%;
 }
 .related-card:hover {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .related-card img {
-  display: block;
-  width: auto;
-  border-bottom: 1px solid #ddd;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 .related-info {
   padding: 8px;
@@ -256,14 +267,24 @@
   color: #999;
 }
 
-.discount{
+.discount {
   font-size: 15px;
   color: #272727;
   line-height: 1.5;
   margin-top: 2px;
 }
-.installments{
+.installments {
   font-size: 15px;
   color: #272727;
   line-height: 1.5;
+}
+.related-carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+@media (max-width: 480px) {
+  .related-carousel {
+    grid-template-columns: 1fr;
+  }
 }
