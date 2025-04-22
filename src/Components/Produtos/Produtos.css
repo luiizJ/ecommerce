@@ -54,7 +54,7 @@
   align-items: center;
   gap: 0.3rem;
   padding: 0.8rem;
-  background-color: #ff6600;
+  background-color: #ff0000;
   color: #f0f0f0;
   border-radius: 8px;
   font-size: 1rem;
@@ -69,7 +69,7 @@
 }
 
 .btnAdd {
-  background-color: #234af5;
+  background-color: #000000;
 }
 
 .btnAdd:hover {
