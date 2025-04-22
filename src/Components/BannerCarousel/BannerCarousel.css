@@ -1,11 +1,10 @@
 .carousel-container {
   position: relative;
-  width: 1569px;
-  height: 400px;
-  max-height: 500px;
+  width: 100%;
+  aspect-ratio: 7 / 10;
   overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-image {
@@ -15,7 +14,7 @@
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
 }
 
 .carousel-image.active {
@@ -26,45 +25,57 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.3);
   border: none;
-  padding: 10px;
+  padding: 6px;
   border-radius: 999px;
   color: white;
   cursor: pointer;
-  transition: background 0.3s;
-  z-index: 2;
-}
-
-.carousel-btn:hover {
-  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
 }
 
 .carousel-btn.left {
-  left: 20px;
+  left: 10px;
 }
 
 .carousel-btn.right {
-  right: 20px;
+  right: 10px;
 }
 
 .carousel-dots {
   position: absolute;
-  bottom: 15px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 8px;
+  gap: 6px;
 }
 
 .dot {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.5);
   transition: background 0.3s;
 }
 
 .dot.active {
   background: white;
+}
+
+@media (min-width: 1024px) {
+  .carousel-container {
+    aspect-ratio: 1569 / 400;
+    max-width: 1569px;
+    margin: 0 auto;
+  }
+
+  .carousel-btn {
+    padding: 10px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
 }
