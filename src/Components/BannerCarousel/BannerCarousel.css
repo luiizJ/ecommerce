@@ -1,7 +1,9 @@
 .carousel-container {
   position: relative;
   width: 100%;
-  aspect-ratio: 7 / 10;
+  aspect-ratio: 1569 / 400;
+  max-width: 1569px;
+
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -63,9 +65,9 @@
   background: white;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .carousel-container {
-    aspect-ratio: 1569 / 400;
+    aspect-ratio: 550 / 800;
     max-width: 1569px;
     margin: 0 auto;
   }

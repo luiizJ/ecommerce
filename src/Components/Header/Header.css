@@ -66,7 +66,7 @@ header .right-slide img {
 @media (max-width: 1024px) {
   .header-container {
     aspect-ratio: 550 / 800;
-    max-width: 100%;
+    max-width: 80%;
     margin: 0 auto;
     width: 80%;
     margin-top: 10px;
