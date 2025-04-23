@@ -63,3 +63,12 @@ header .right-slide img {
     font-size: 1.8rem;
   }
 }
+@media (max-width: 1024px) {
+  .header-container {
+    aspect-ratio: 500 / 500;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 10px;
+  }
+}

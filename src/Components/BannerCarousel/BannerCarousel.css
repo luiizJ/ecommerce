@@ -64,12 +64,6 @@
 }
 
 @media (min-width: 1024px) {
-  .carousel-container {
-    aspect-ratio: 1569 / 400;
-    max-width: 1569px;
-    margin: 0 auto;
-  }
-
   .carousel-btn {
     padding: 10px;
   }
